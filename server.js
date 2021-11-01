@@ -7,7 +7,7 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname));
 app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
 

@@ -1,0 +1,17 @@
+.ui.container{
+    background-color: rgba(0, 0, 0, 0.308);
+    margin-top: 12px;
+    display: grid;
+}
+
+#list{
+    max-height:450px;
+    overflow-y: scroll;
+    margin-left: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.ui, #count{
+    color: white;
+}

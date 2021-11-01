@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="/css/semantic.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/background.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/css/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/css/background.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css"/>
     <meta charset="utf-8"/>
   </head>
 <body>
     <div class="ui container">
 
+      <h2 class="ui center aligned icon header" style="margin-top: 12px; color: white;">
+        <i class="circular search icon"></i>
+        Word Finder
+      </h2>
+      <br>
+      <div class="ui inverted divider"></div>
+
+      <div class="ui left icon action input" style="margin-right: auto; margin-left: auto;">
+        <input id="search" type="text" placeholder="Search Here...">
+        <i class="font icon"></i>
+        <div id="clear" class="ui animated button">
+          <div class="visible content">Clear</div>
+          <div class="hidden content">
+            <i class="x icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui horizontal divider" id="count" >
+        Words Found: 
+      </div>
+      <div class="ui relaxed divided list" id="list">
+      </div>
       </div>
 </body>
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/semantic.min.js"></script>
+    <script src="/public/js/jquery-3.6.0.min.js"></script>
+    <script src="/public/js/semantic.min.js"></script>
+    <script src="/public/js/logic.js"></script>
 </html>
